@@ -1,0 +1,139 @@
+.calculatorContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    background-color:#112D4E;
+    padding: 10px;
+    width: 450px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.253);
+    border-radius:5px;
+}
+
+.resultContainer{
+    width: 100%;
+    height: 110px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultContainer > p{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:2.5rem;
+    text-align: right;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px;
+}
+
+.buttonContainer > div > button{
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 0.1s ease-in-out;
+}
+
+.buttonContainer > div:nth-child(1){
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+/* .buttonContainer > div:nth-child(2){
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+} */
+.buttonContainer > div:nth-child(2){
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.buttonContainer > div:nth-child(3){
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.buttonContainer > div:nth-child(4){
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.buttonContainer > div:nth-child(5){
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.memoryButton{
+    background-color:#FC5185;
+    color: white;
+}
+
+.digitButton{
+    background-color:#3F72AF;
+    color: white;
+}
+
+.operationButton{
+    background-color:#F08A5D;
+    color: white;
+}
+
+.clicked{
+    transform: scale(0.93);
+}
+
+.expr{
+    font-size: 1.2rem;
+    color:rgb(99, 99, 99);
+}
+
+.res{
+    font-size: 2.1rem;
+}
+
+@media screen and (max-width:480px) {
+    .appContainer{
+        width: 350px;
+    }
+    .resultContainer > p{
+        display: flex;
+        flex-direction: column;
+        font-size:2rem;
+        text-align: right;
+        height: 100%;
+        overflow-x: scroll;
+    }
+    .expr{
+        font-size: 1rem;
+        color:rgb(99, 99, 99);
+    }
+    
+    .res{
+        font-size: 2rem;
+    }
+    
+}
